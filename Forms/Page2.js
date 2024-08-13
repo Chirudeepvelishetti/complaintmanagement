@@ -75,9 +75,15 @@ export default function Page2({ navigation }) {
     
 
 
-    <View style={styles.buttonview}>   
+    <View style={styles.buttonview}>  
     
-    <View style={{marginLeft:width*0.30}}>     
+    <View >     
+    <TouchableOpacity onPress={()=>navigation.navigate('form3')}>
+      <Text style={styles.buttontext1}>Back</Text>
+    </TouchableOpacity>
+    </View>
+    
+    <View >     
     <TouchableOpacity onPress={()=>navigation.navigate('form4')}>
       <Text style={styles.buttontext1}>Next</Text>
     </TouchableOpacity>
@@ -96,7 +102,7 @@ const styles = StyleSheet.create({
    backgroundColor:'white',
     marginHorizontal:width*0.03,
     marginTop:width*0.15,
-   marginBottom:width*0.05,
+   marginBottom:width*0.06,
     elevation:20,
     borderRadius:20
   },
@@ -136,10 +142,12 @@ const styles = StyleSheet.create({
   buttonview:{
     marginTop:width*0.10,
     marginBottom:width*0.05,
-    marginHorizontal:width*0.05
+    marginHorizontal:width*0.08,
+    flexDirection:'row',
+    justifyContent:'space-between'
   },
   buttontext1:{
-    marginLeft:width*0.28,
+    // marginLeft:width*0.28,
     paddingHorizontal:width*0.06,
     paddingVertical:width*0.01,
     borderColor:'black',

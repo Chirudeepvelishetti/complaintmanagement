@@ -29,7 +29,12 @@ export default function Page5() {
             </View>
             <View style={{flexDirection:'row'}}>
             <Entypo name="location-pin" size={20} style={styles.icons}></Entypo>
-            <Text style={styles.text}>{formData.district},{formData.mandal}, {formData.village} ,{formData.pincode}. </Text>
+            <Text style={styles.text}>{formData.district},{formData.mandal},  </Text>
+            </View>
+            <View style={{paddingLeft:width*0.07,
+              marginTop:width*-0.02
+            }}>
+            <Text style={styles.text}> {formData.village} ,{formData.pincode}.</Text>
             </View>
           </View>
           <View style={styles.cont1}>
@@ -76,7 +81,7 @@ export default function Page5() {
           <View style={styles.btnview}>
           <View>
           <TouchableOpacity>
-                  <Text style={styles.btntext}>Back</Text>
+                  <Text style={styles.btntext} onPress={()=>navigation.navigate('form4')}>Back</Text>
               </TouchableOpacity>
           </View>
           <View>
