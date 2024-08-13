@@ -1,5 +1,5 @@
 import React, { useMemo, useRef,useState } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity,Linking} from 'react-native';
 import styles from '../CSS/Css';
 import BottomSheet from '@gorhom/bottom-sheet';
 import * as Animatable from 'react-native-animatable';
@@ -48,7 +48,7 @@ export default function Complaint() {
         onPress={handleOpenBottomSheet}
         style={styles.complaint}
       >
-        <Text style={styles.complainttext}>Register Your Complaint +</Text>
+        <Text style={styles.complainttext}>  Register Your Complaint  </Text>
       </TouchableOpacity>
       
       <View style={styles.footer}>
