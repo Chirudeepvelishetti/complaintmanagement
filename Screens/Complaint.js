@@ -31,9 +31,9 @@ export default function Complaint() {
 
   return (
     <View style={{  flex: 0 ,backgroundColor:'#264782' }}>
-    {overlayVisible && (
-      <View style={styles.overlay} />
-    )}
+     {overlayVisible && (
+       <View style={styles.overlay} />
+     )}
     
     <View style={styles.sliderbg}>
     <Animatable.Image animation='fadeInRight'  duration={3000} source={require('../assets/image1.png')} style={styles.sliderimage} />
@@ -67,7 +67,7 @@ export default function Complaint() {
       <View style={styles.bottomv}>
         <Animatable.View style={{paddingBottom:10}}   animation={animate ? 'flipInX' : undefined} duration={1000} >
         <TouchableOpacity onPress={()=> navigation.navigate('scan')}>
-          <Text style={styles.complainttext1}>Scan qrcode To Register Complaint Here</Text>
+          <Text style={styles.complainttext1}>Scan QRcode To Register Complaint Here</Text>
           </TouchableOpacity>
         </Animatable.View>
         <Animatable.View style={{paddingTop:30}}   animation={animate ? 'flipInX' : undefined} duration={1000}>
